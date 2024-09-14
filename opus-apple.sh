@@ -6,8 +6,9 @@ set -e
 # $3 - OS name (ios/tvos)
 # $4 - Opus host type
 
-tar xzf opus-$OPUS_VERSION.tar.gz
-pushd opus-$OPUS_VERSION
+# tar xzf opus-$OPUS_VERSION.tar.gz
+# pushd opus-$OPUS_VERSION
+pushd opus
 
 export SDKROOT=$(xcrun --sdk $2 --show-sdk-path)
 export LIBRARY_PATH="$LIBRARY_PATH:$SDKROOT/usr/lib"
